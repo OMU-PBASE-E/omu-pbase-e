@@ -1,0 +1,8 @@
+version: '3'
+services:
+  django:
+    build: .
+    volumes:
+      - ./advanced_software/introduced_facility:/app
+    ports:
+      - "8000:8000"
