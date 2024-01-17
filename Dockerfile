@@ -1,6 +1,10 @@
 FROM python:3.10
 
-RUN set -eux \
- && pip3 install django==3.2
+WORKDIR /app
 
-CMD [ "python3", "/app/manage.py", "runserver", "0.0.0.0:8000" ]
+COPY requirements.txt /app/
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . /app
+
+CMD ["gunicorn", "/app/manage.py", "-b", "0.0.0.0:8000"]
