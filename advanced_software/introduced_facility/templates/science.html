@@ -1,0 +1,62 @@
+{% extends "template_facility.html" %}
+{% load static %}
+
+{% block title %}理学新棟{% endblock %}
+{% block header_title %}理学新棟{% endblock %}
+
+{% block facility_name_ja %}理学新棟{% endblock %}
+{% block facility_name_en %}Science Bldg.{% endblock %}
+
+{% block section_heading %}理学新棟{% endblock %}
+{% block section_subheading %}Science Bldg.{% endblock %}
+
+{% block introduction %}
+<li>
+    <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'images/noimage.png' %}" alt="..." /></div>
+    <div class="timeline-panel">
+        <div class="timeline-heading">
+            <h4>202?年度開設</h4>
+            <h4 class="subheading">らしい</h4>
+        </div>
+        <div class="timeline-body"><p class="text-muted">情報がなさすぎて何もわからない</p></div>
+    </div>
+</li>
+<li class="timeline-inverted">
+    <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'img/about/2.jpg' %}" alt="..." /></div>
+    <div class="timeline-panel">
+        <div class="timeline-heading">
+            <h4>理学部の新拠点</h4>
+            <h4 class="subheading">なのかな</h4>
+        </div>
+        <div class="timeline-body"><p class="text-muted">本当にわからん……</p></div>
+    </div>
+</li>
+<li>
+    <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'img/about/3.jpg' %}" alt="..." /></div>
+    <div class="timeline-panel">
+        <div class="timeline-heading">
+            <h4>何かあれば</h4>
+            <h4 class="subheading">どんどん書こう</h4>
+        </div>
+        <div class="timeline-body"><p class="text-muted">設備とかあったら良いかな</p></div>
+    </div>
+</li>
+<li class="timeline-inverted">
+    <div class="timeline-image">
+        <h4>202?年度<br><br>開設予定！</h4>
+    </div>
+</li>
+{% endblock %}
+
+{% block postcode %}558-8585{% endblock %}
+{% block address %}大阪市住吉区杉本3-3-138{% endblock %}
+
+
+{% block access %}
+JR阪和線「杉本町(大阪市立大学前)駅」東口からすぐ<br>
+Osaka Metro御堂筋線「あびこ駅」4号出口より徒歩約15分
+{% endblock %}
+
+{%block googlemap %}
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d995.3826627937093!2d135.50733586664623!3d34.59298210018874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sja!2sjp!4v1705559644735!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+{% endblock %}

@@ -4,10 +4,14 @@ from django.views.generic import TemplateView
 class FacilityListClass(TemplateView):
     template_name = "facility_list.html"
 
-# 施設1を表示するためのクラス
-class Facility1Class(TemplateView):
-    template_name = "facility_1.html"
+# 森ノ宮キャンパスを表示するためのクラス
+class MorinomiyaClass(TemplateView):
+    template_name = "morinomiya.html"
 
-# 施設2を表示するためのクラス
-class Facility2Class(TemplateView):
-    template_name = "facility_2.html"
+# 工学新棟を表示するためのクラス
+class EngineeringClass(TemplateView):
+    template_name = "engineering.html"
+
+# 理学新棟を表示するためのクラス
+class ScienceClass(TemplateView):
+    template_name = "science.html"

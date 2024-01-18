@@ -15,12 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from .views import FacilityListClass, Facility1Class, Facility2Class
+from .views import FacilityListClass, MorinomiyaClass, EngineeringClass, ScienceClass
 
 # 新しくページを追加するときはここにURLパターンを追加
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', FacilityListClass.as_view(), name='facility-list'), # 施設一覧を表示するページのURL
-    path('facility1/', Facility1Class.as_view(), name='facility1'), # 施設1を表示するページのURL
-    path('facility2/', Facility2Class.as_view(), name='facility2'), # 施設2を表示するページのURL
+    path('morinomiya/', MorinomiyaClass.as_view(), name='morinomiya'), # 森ノ宮キャンパスを表示するページのURL
+    path('engineering/', EngineeringClass.as_view(), name='engineering'), # 新工学部棟を表示するページのURL
+    path('science/', ScienceClass.as_view(), name='science'), # 新理学部棟を表示するページのURL
 ]
