@@ -1,0 +1,65 @@
+{% extends "template_facility.html" %}
+{% load static %}
+
+{% block title %}森ノ宮キャンパス{% endblock %}
+{% block header_title %}森ノ宮キャンパス{% endblock %}
+
+{% block facility_name_ja %}森ノ宮キャンパス{% endblock %}
+{% block facility_name_en %}Morinomiya Campus{% endblock %}
+
+{% block image %}{% static "images/morinomiya.jpg" %}{% endblock %}
+
+{% block section_heading %}森ノ宮キャンパス{% endblock %}
+{% block section_subheading %}Morinomiya Campus{% endblock %}
+
+{% block introduction %}
+<li>
+    <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'images/morinomiya_square.jpg' %}" alt="..." /></div>
+    <div class="timeline-panel">
+        <div class="timeline-heading">
+            <h4>2025年度開設</h4>
+            <h4 class="subheading">2大学統合の新たなシンボルに</h4>
+        </div>
+        <div class="timeline-body"><p class="text-muted">コンセプトは「知の森」．<br>簡単な紹介をもう少し．大阪都心に！的な<br>画像は正方形にトリミングしないと円にならないっぽい</p></div>
+    </div>
+</li>
+<li class="timeline-inverted">
+    <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'img/about/2.jpg' %}" alt="..." /></div>
+    <div class="timeline-panel">
+        <div class="timeline-heading">
+            <h4>◯○学部の拠点</h4>
+            <h4 class="subheading">その他にも◯◯学部なども利用予定</h4>
+        </div>
+        <div class="timeline-body"><p class="text-muted">ネタ切れ</p></div>
+    </div>
+</li>
+<li>
+    <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'img/about/3.jpg' %}" alt="..." /></div>
+    <div class="timeline-panel">
+        <div class="timeline-heading">
+            <h4>何かあれば</h4>
+            <h4 class="subheading">どんどん書こう</h4>
+        </div>
+        <div class="timeline-body"><p class="text-muted">設備とかあったら良いかな</p></div>
+    </div>
+</li>
+<li class="timeline-inverted">
+    <div class="timeline-image">
+        <h4>2025年度後期<br><br>開設予定！</h4>
+    </div>
+</li>
+{% endblock %}
+
+{% block postcode %}536-0025{% endblock %}
+{% block address %}大阪市城東区森之宮2丁目{% endblock %}
+
+
+{% block access %}
+JR環状線「森ノ宮」駅下車、徒歩約10分<br>
+Osaka Metro中央線「森ノ宮」駅下車、徒歩約10分
+{% endblock %}
+
+{%block googlemap %}
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3136.855465305579!2d135.5388686626066!3d34.68767010436901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1705983571872!5m2!1sja!2sjp" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+{% endblock %}
+

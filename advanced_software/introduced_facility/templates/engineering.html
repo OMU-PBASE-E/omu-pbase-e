@@ -1,0 +1,65 @@
+{% extends "template_facility.html" %}
+{% load static %}
+
+{% block title %}工学新棟{% endblock %}
+{% block header_title %}工学新棟{% endblock %}
+
+{% block facility_name_ja %}工学新棟{% endblock %}
+{% block facility_name_en %}Engeneering Bldg.{% endblock %}
+
+{% block image %}{% static "images/engineering.jpg" %}{% endblock %}
+
+{% block section_heading %}工学新棟{% endblock %}
+{% block section_subheading %}Engeneering Bldg.{% endblock %}
+
+{% block introduction %}
+<li>
+    <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'images/engineering_square.jpg' %}" alt="..." /></div>
+    <div class="timeline-panel">
+        <div class="timeline-heading">
+            <h4>202?年度開設</h4>
+            <h4 class="subheading">工学か……</h4>
+        </div>
+        <div class="timeline-body"><p class="text-muted">情報は使わないのかな，そもそも講義オンラインだけど</p></div>
+    </div>
+</li>
+<li class="timeline-inverted">
+    <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'img/about/2.jpg' %}" alt="..." /></div>
+    <div class="timeline-panel">
+        <div class="timeline-heading">
+            <h4>工学部の新拠点</h4>
+            <h4 class="subheading">点在する工学部系施設を集約</h4>
+        </div>
+        <div class="timeline-body"><p class="text-muted">内容要確認</p></div>
+    </div>
+</li>
+<li>
+    <div class="timeline-image"><img class="rounded-circle img-fluid" src="{% static 'img/about/3.jpg' %}" alt="..." /></div>
+    <div class="timeline-panel">
+        <div class="timeline-heading">
+            <h4>何かあれば</h4>
+            <h4 class="subheading">どんどん書こう</h4>
+        </div>
+        <div class="timeline-body"><p class="text-muted">設備とかあったら良いかな</p></div>
+    </div>
+</li>
+<li class="timeline-inverted">
+    <div class="timeline-image">
+        <h4>202?年度<br><br>開設予定！</h4>
+    </div>
+</li>
+{% endblock %}
+
+{% block postcode %}599-8531{% endblock %}
+{% block address %}大阪府堺市中区学園町1番1号{% endblock %}
+
+
+{% block access %}
+南海高野線「白鷺駅」から徒歩約7分<br>
+南海高野線「中百舌鳥駅」から徒歩約13分<br>
+Osaka Metro御堂筋線「なかもず駅（5号出口）」から徒歩約13分
+{% endblock %}
+
+{%block googlemap %}
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1478.5673110881978!2d135.50429678051938!3d34.54577474385833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1705983499668!5m2!1sja!2sjp" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+{% endblock %}
