@@ -472,6 +472,9 @@ output {
 
 iframe {
   border: 0;
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 16 / 9;
 }
 
 summary {
