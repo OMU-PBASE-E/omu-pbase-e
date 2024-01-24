@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from .views import FacilityListClass, MorinomiyaClass, EngineeringClass, ScienceClass
+from .views import FacilityListClass, MorinomiyaClass, EngineeringClass, ScienceClass, PecClass, B16Class
 
 # 新しくページを追加するときはここにURLパターンを追加
 urlpatterns = [
@@ -25,4 +25,6 @@ urlpatterns = [
     path('morinomiya/', MorinomiyaClass.as_view(), name='morinomiya'), # 森ノ宮キャンパスを表示するページのURL
     path('engineering/', EngineeringClass.as_view(), name='engineering'), # 新工学部棟を表示するページのURL
     path('science/', ScienceClass.as_view(), name='science'), # 新理学部棟を表示するページのURL
+    path('pec/', PecClass.as_view(), name='pec'), # 生産技術センターを表示するページのURL
+    path('B16/', B16Class.as_view(), name='B16'), # B16棟を表示するページのURL
 ]
