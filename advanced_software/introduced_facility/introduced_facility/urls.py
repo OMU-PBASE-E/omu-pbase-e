@@ -14,12 +14,13 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from .views import FacilityListClass, MorinomiyaClass, EngineeringClass, ScienceClass
 
 # 新しくページを追加するときはここにURLパターンを追加
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include('facility.urls')),
     path('', FacilityListClass.as_view(), name='facility-list'), # 施設一覧を表示するページのURL
     path('morinomiya/', MorinomiyaClass.as_view(), name='morinomiya'), # 森ノ宮キャンパスを表示するページのURL
     path('engineering/', EngineeringClass.as_view(), name='engineering'), # 新工学部棟を表示するページのURL
