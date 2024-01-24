@@ -5,7 +5,7 @@ services:
     volumes:
       - ./advanced_software/introduced_facility:/app
   nginx:
-    image: nginx:1.25.3
+    build: nginx
     depends_on:
       - django
     ports:
