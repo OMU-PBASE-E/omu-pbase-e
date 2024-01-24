@@ -15,3 +15,9 @@ class EngineeringClass(TemplateView):
 # 理学新棟を表示するためのクラス
 class ScienceClass(TemplateView):
     template_name = "science.html"
+
+class PecClass(TemplateView):
+    template_name = "pec.html"    
+
+class B16Class(TemplateView):
+    template_name = "B16.html"       
